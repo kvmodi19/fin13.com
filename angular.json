@@ -28,7 +28,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/assets/main.css"
             ],
             "scripts": []
           },
@@ -123,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "fin13"
+    }
+  },
+  "defaultProject": "fin13",
+  "cli": {
+    "analytics": "67b6dd3d-7fa8-40fd-8140-35cd2f38cd41"
+  }
 }
