@@ -2,20 +2,19 @@
 <div id="main">
 
     <!-- First Section -->
-    <section id="first" class="main special">
+    <section id="first" class="main special sidebar-wrapper">
         <header class="major">
             <h2>How it works</h2>
         </header>
         <div class="wrapper d-flex align-items-stretch">
             <nav id="sidebar" [ngClass]="{'active': active}">
                 <div class="custom-menu">
-                    <button type="button" id="sidebarCollapse" class="btn btn-primary" (click)="toggleMenu()">
+                    <a type="button" href="javascript:void();" id="sidebarCollapse" class="btn btn-primary" (click)="toggleMenu()">
                         <i class="fa fa-bars"></i>
                         <span class="sr-only">Toggle Menu</span>
-                    </button>
+                    </a>
                 </div>
                 <div class="p-4 pt-5">
-                    <h1><a [routerLink]="['/home']" class="logo">Fin13</a></h1>
                     <ul class="list-unstyled components mb-5">
                         <li *ngFor="let calc of calculators" (click)="changeCalculator(calc)"
                             [ngClass]="{'active': selectedCalculator.name === calc.name}">

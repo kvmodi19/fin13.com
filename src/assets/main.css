@@ -269,6 +269,7 @@ i {
 
 p {
 	margin: 0 0 2em 0;
+	font-size: 14px;
 }
 
 p.content {
@@ -2351,12 +2352,19 @@ input[type="radio"]:focus + label:before {
 }
 
 .icon.major {
+	width: 100px;
+    height: 100px;
 	border: solid 1px;
 	display: inline-block;
 	border-radius: 100%;
 	padding: 0.65em;
 	margin: 0 0 2em 0;
 	cursor: default;
+}
+
+.icon.major .fa {
+	font-size: 50px;
+    line-height: 70px;
 }
 
 .icon.major:before {
@@ -3168,7 +3176,7 @@ table.alt tbody tr td {
 	position: absolute;
 	width: 64em;
 	max-width: calc(100% - 4em);
-	padding: 1em;
+	padding: .5em 1em;
 	background-color: #f7f7f7;
 	border-top-left-radius: 0.25em;
 	border-top-right-radius: 0.25em;
