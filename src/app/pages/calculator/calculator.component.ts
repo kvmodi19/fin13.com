@@ -142,12 +142,12 @@ export class CalculatorComponent implements OnInit {
   constructor(private sanitizer: DomSanitizer) { }
 
   ngOnInit(): void {
-    this.selectedCalculator = this.calculators[0];
+    this.selectedCalculator = Object.assign({}, this.calculators[0]);
     this.selectedCalculator.src = this.getUrl(this.calculators[0].src);
   }
 
   changeCalculator(calc) {
-    this.selectedCalculator = calc;
+    this.selectedCalculator = Object.assign({}, calc);
     this.selectedCalculator.src = this.getUrl(calc.src);
   }
 
